@@ -1,4 +1,5 @@
 module.exports = 
 {
-    "URI": "mongodb://127.0.0.1/book_store"
+    "URI": "mongodb+srv://admin:admin@mongodbserver.lkz5jhf.mongodb.net/?retryWrites=true&w=majority"
+    // "URI": "mongodb://127.0.0.1/grocery_store"
 }
