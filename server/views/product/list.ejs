@@ -7,17 +7,16 @@
   <main class="container">
     <div class="row">
         <div class="offset-md-1 col-md-11">
-            <h1><%= title %></h1>
+            <br><h1><%= title %></h1><br>
             <a href="/product-list/add" class="btn btn-primary" role="button">
-            <i class="fas fa-plus-circle"></i> Add a product
-            </a>
-            <br>
+            <i class="fas fa-plus-circle"></i> Add a product</a>
+            <br><br>
             <table class="table table-bordered table-striped table-hover">
-                <!-- Header Row-->
+                <!-- Header Row -->
                 <tr class="d-flex">
-                    <th class="text-center col-2">Name</th>
+                    <th class="text-center col-sm">Name</th>
                     <th class="text-center col-1">Quantity</th>
-                    <th class="text-center col-1">Price</th>
+                    <th class="text-center col-2">Price</th>
                     <th class="text-center col-1"></th>
                     <th class="text-center col-1"></th>
                 </tr>
@@ -26,9 +25,9 @@
 
                 <% for(let count = 0; count < ProductList.length; count++) { %>
                     <tr class="d-flex">
-                        <td class="text-center col-2"><%= ProductList[count].name %></td>
+                        <td class="text-center col-sm"><%= ProductList[count].name %></td>
                         <td class="text-center col-1"><%= ProductList[count].quantity %></td>
-                        <td class="text-center col-1"><%= ProductList[count].price %></td>
+                        <td class="text-center col-2"><%= ProductList[count].price %></td>
                         <td class="text-center col-1">
                             <a href="/product-list/edit/<%= ProductList[count]._id %>" class="btn btn-primary btn-sm">
                             <i class="fas fa-pencil-alt"></i> Edit</a>
