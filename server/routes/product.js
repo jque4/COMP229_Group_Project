@@ -4,12 +4,12 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
-// connect to our Book Model
+// connect to our Product Model
 let Product = require('../models/product');
 
 let productController = require('../controllers/product');
 
-/* GET Route for the Book List page - READ Operation */
+/* GET Route for the Product List page - READ Operation */
 router.get('/', productController.displayProductList);
 
 
