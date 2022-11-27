@@ -7,4 +7,15 @@ export class Product
     public price?: number,
     public quantity?: number,
   ){}
+  public toString(): string
+  {
+    return `
+    Book
+    -------------------------------
+    Name       : ${this.name}
+    Price      : ${this.price}
+    Quantity   : ${this.quantity}
+    -------------------------------
+    `;
+  }
 }
