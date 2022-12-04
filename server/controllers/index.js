@@ -51,8 +51,8 @@ module.exports.processLoginPage = (req, res, next) => {
             // server error (continued)
             if (err) return next(err);
             return res.redirect('/product-list');
-        })(req, res, next);
-    })
+        });
+    })(req, res, next);
 }
 
 module.exports.displayRegisterPage = (req, res, next) => {
@@ -72,7 +72,7 @@ module.exports.processRegisterPage = (req, res, next) => {
     let newUser = new User({
         username: req.body.username,
         email: req.body.email,
-        displayName: req.body.displayName
+        displayName: req.body.username
     });
 
     User.register(newUser, req.body.password, (err) => {
@@ -99,6 +99,6 @@ module.exports.processRegisterPage = (req, res, next) => {
 }
 
 module.exports.performLogout = (req, res, next) => {
-    req.logout();
+    req.logout(e=>e);
     res.redirect('/');
 }
