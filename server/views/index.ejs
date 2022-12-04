@@ -1,15 +1,47 @@
-<%- include partials/header.ejs %>
+<%- include partials/header_index.ejs %>
 
 <%- include partials/main_nav.ejs %>
   
 
-  <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
-    </div>
-  </main>
+<!-- Main Content -->
+  <div class="outdiv">
+    <div class="indiv"><img src="./Assets/images/grocery-1.jpg" width="416px" height="277px" alt="smiling woman" ></div>
+    <div class="indiv"><img src="./Assets/images/grocery-2.jpg" width="416px" height="277px" alt="Big smile" ></div>
+    <div class="indiv"><img src="./Assets/images/grocery-3.jpg" width="416px" height="277px" alt="smiling ballon and lasy" ></div>
+  </div>
+  <h1>Products</h1>
+  <h2>Dairy</h2>
+  <div class="products">
+      <ul class="ulitem">
+          <li class="liitem"><a class="item">Milk</a></li>
+          <li class="liitem"><a class="item">Cheese</a></li>
+          <li class="liitem"><a class="item">Yogurt</a></li>
+          </ul>
+  </div>
+  <h2>Snacks</h2>
+  <div class="products">
+      <ul class="ulitem">
+          <li class="liitem"><a class="item">Crisps</a></li>
+          <li class="liitem"><a class="item">Choclates</a></li>
+          <li class="liitem"><a class="item">Baked goodies</a></li>
+          </ul>
+  </div>
+  <h2>Meat</h2>
+  <div class="products">
+      <ul class="ulitem">
+          <li class="liitem"><a class="item">Chicken</a></li>
+          <li class="liitem"><a class="item">Beef</a></li>
+          <li class="liitem"><a class="item">Shrimps</a></li>
+          </ul>
+  </div>
+  <h2>Personal care</h2>
+  <div class="products">
+        <ul class="ulitem">
+            <li class="liitem"><a class="item">Soap</a></li>
+            <li class="liitem"><a class="item">Shampoo</a></li>
+            <li class="liitem"><a class="item">Toilet paper</a></li>
+        </ul>
+  </div>
   
 <%- include partials/bottom_nav.ejs %>  
 
