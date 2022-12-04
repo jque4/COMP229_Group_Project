@@ -52,7 +52,7 @@ h2{
 	text-align:center;
 	margin:0px;
 }
-a:hover{
+a:hover:not(.nav-link){
 	background-color:white;
 	color:#ca7df9;
 }

@@ -14,13 +14,13 @@ module.exports.displayProductList = (req, res, next) => {
         else
         {
 
-            res.render('product/list', {title: 'Products', ProductList: productList});            
+            res.render('product/list', {title: 'Products', ProductList: productList, displayName: req.user ? req.user.displayName : ''});            
         }
     });
 }
 
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('product/add', {title: 'Add product'});            
+    res.render('product/add', {title: 'Add product', displayName: req.user ? req.user.displayName : ''});            
 }
 
 module.exports.processAddPage = (req, res, next) => {
@@ -56,7 +56,7 @@ module.exports.displayEditPage = (req, res, next) => {
         else
         {
             //show the edit view
-            res.render('product/edit', {title: 'Edit Product', product: productToEdit})
+            res.render('product/edit', {title: 'Edit Product', product: productToEdit, displayName: req.user ? req.user.displayName : ''})
         }
     });
 
