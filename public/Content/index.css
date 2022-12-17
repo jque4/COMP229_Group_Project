@@ -59,6 +59,9 @@ a:hover:not(.nav-link){
 .purple{
 	background-color: #ca7df9;
 }
+.aknow-more{
+	font-size: 16px;
+}
 .contact{
 	margin-top:-10px;
 	padding-left:00px;
@@ -76,7 +79,7 @@ a:hover:not(.nav-link){
 	margin:49px;
 	border: 2px solid #000;
 	text-align:center;
-	font-size:24px;
+	font-size:20px;
 	font-family: Arial;
 }
 .map{
@@ -92,18 +95,29 @@ a:hover:not(.nav-link){
 	margin-left: 424px;
 	position:absolute;
 }
+.headquarter-space{
+	height:525px;
+	background-color:#EEEEEE;
+}
 .small-icon{
 	width:50px;
 	height:50px;
 	margin:45px;
-	float:;
+	float:right;
+}
+.small-icon1{
+	width:50px;
+	height:50px;
+	margin-left:35px;
+	margin-top: 20px;
+	float:left;
 }
 .location{
 	font-size:20px;
 	font-family:Arial;
-	margin-top:-80px;
+	margin-top:30px;
 	margin-left:100px;
-	padding:0;
+	padding:10px;
 	text-align:left;
 }
 .contact-number{
@@ -120,10 +134,6 @@ a:hover:not(.nav-link){
 	height:277px;
 	margin-top:60px;
 }
-.headquarter-space{
-	height:525px;
-	background-color:#EEEEEE;
-}
 .reach{
 	color:#ca7df9;
 	background-color:;
@@ -133,6 +143,7 @@ a:hover:not(.nav-link){
 }
 .intro1{
 	font-size:25px;
+	text-align: center;
 }
 .outdiv{
 	padding:0;
@@ -142,4 +153,56 @@ a:hover:not(.nav-link){
 .indiv{
 	float:left;
 	width:33.33%;
+}
+
+.intro{
+	width: 75%;
+	font-size:25px;
+}
+.team-intro{
+	margin:0;
+	padding:0;
+	background-color: ;
+	height:300px;
+}
+.team-picture{
+	width:16%;
+	height:200px;
+	margin-left:100px;
+	margin-top: 50px;
+	float:left;
+	background-color:;
+}
+.team-detail{
+	margin:0;
+	margin-top:65px;
+	padding:0;
+	width:50%;
+	height:170px;
+	background-color:#FDD966;
+	color:#ca7df9;
+	float:left;
+}
+.team-border{
+	margin:0;
+	margin-top:65px;
+	padding:0;		 
+	border-bottom:85px solid transparent;
+	border-top: 85px solid transparent;
+	border-left: 90px solid #FDD966;
+	width:10%;
+	height:0px;
+	background-color:#EEEEEE;
+	color:#ca7df9;
+	float:left;
+}
+.know-more{
+	float:right;
+	width: 100px;
+	height:30px;
+	border: 3px solid black;
+	background-color:#ca7df9;
+	color:000;
+	text-decoration:none;
+	margin-top: 0px;
 }

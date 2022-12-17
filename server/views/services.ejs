@@ -1,0 +1,58 @@
+<%- include partials/header_index.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <!--Main section-->
+  <div class="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Assets/images/delivery.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>GROCERY DELIVERED AT YOUR DOORSTEPS</h5>
+              <p>With the help of our hard working delivery employees, we deliver grocery at your doorsteps within 25 minutes.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/images/pickup.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="background-color: black; color:white">GROCERY PICK-UP</h5>
+              <p style="background-color: black; color:white">Don't want to pay the delivery charges but want to escape the queue? We got you covered.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/images/return.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color:black">EASY REFUNDS AND RETURNS</h5>
+              <p style="color:black">Ordered the wrong product? Product isn't up to the task? Get it replaced or returned at one click!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+   <!--Footer Section-->
+   <nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand navbar-text" href="#">©Copyright 2022. Tezz.inc</a>
+    </div>
+  </nav>
+
+  <!--Script Section-->
+  <script src="/script/app.js"></script>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src='/bootstrap/dist/js/bootstrap.min.js'></script>
+</body>
+</html>
